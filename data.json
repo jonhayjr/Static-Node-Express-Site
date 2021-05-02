@@ -57,7 +57,7 @@
             "live_link": "https://www.jonhayjr.com/OOP-Game-Show-App",
             "github_link": "https://github.com/jonhayjr/OOP-Game-Show-App",
             "image_urls": [
-                "static/images/Project3_SquareImage.png",
+                "/static/images/Project3_SquareImage.png",
                 "/static/images/Project3_LandscapeImage1.png",
                 "/static/images/Project3_LandscapeImage2.png",
                 "/static/images/Project3_LandscapeImage3.png"
@@ -75,7 +75,7 @@
             "live_link": "https://www.jonhayjr.com/Public-API-Requests",
             "github_link": "https://github.com/jonhayjr/Public-API-Requests",
             "image_urls": [
-                "static/images/Project4_SquareImage.png",
+                "/static/images/Project4_SquareImage.png",
                 "/static/images/Project4_LandscapeImage1.png",
                 "/static/images/Project4_LandscapeImage2.png",
                 "/static/images/Project4_LandscapeImage3.png"
@@ -94,7 +94,7 @@
             "live_link": "https://www.jonhayjr.com/Scoreboard",
             "github_link": "https://github.com/jonhayjr/Scoreboard",
             "image_urls": [
-                "static/images/Project5_SquareImage.png",
+                "/static/images/Project5_SquareImage.png",
                 "/static/images/Project5_LandscapeImage1.png",
                 "/static/images/Project5_LandscapeImage2.png"
             ]
