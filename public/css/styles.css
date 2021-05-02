@@ -306,6 +306,12 @@ nav a span {
   border: 1px solid transparent;
 }
 
+.btn-link:hover {
+  color: #333;
+  background-color: #fefefe;
+  border: 1px solid #333;
+}
+
 /* Error*/
 .error {
   color: red;

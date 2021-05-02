@@ -10,8 +10,10 @@ Changed font to Nunito.
 1. Project Image Over Effect 
 Added box shadow and scale effect to project images on hover.
 
-1. Error Pages
+1. Error Pages Styling
 Added error class with red font color and uppercase lettering for h1 and h2 elements.
 
+1. Button Links Hover Effects
+Added hover effects to Github, LinkedIn and Twitter button links.
+
 **Click below for a preview**\
-https://www.jonhayjr.com/Public-API-Requests
