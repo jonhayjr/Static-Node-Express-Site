@@ -1,5 +1,4 @@
 const express = require('express');
-const { render } = require('pug');
 const data = require('./data.json')
 const {projects} = data;
 const app = express();

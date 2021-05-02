@@ -262,6 +262,12 @@ nav a span {
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
+.cell img:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+  transform: scale(1.1);
+}
+
 
 /* 
   About and project pages styles 
@@ -299,6 +305,18 @@ nav a span {
   background-color: #333;
   border: 1px solid transparent;
 }
+
+/* Error*/
+.error {
+  color: red;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+h1.error {
+  text-transform: uppercase;
+}
+
 
 
 /* 
