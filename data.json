@@ -9,8 +9,8 @@
             "live_link": "http://www.jonhayjr.com/Random-Quote-Generator",
             "github_link": "https://github.com/jonhayjr/Random-Quote-Generator",
             "image_urls": [
-                "Project0_LandscapeImage.png",
-                "Project0_SquareImage.png"
+                "/static/images/Project0_LandscapeImage.png",
+                "/static/images/Project0_SquareImage.png"
             ]
         },
         {
@@ -21,8 +21,8 @@
             "live_link": "http://www.jonhayjr.com/Pagination-and-Filtering",
             "github_link": "https://github.com/jonhayjr/Pagination-and-Filtering",
             "image_urls": [
-                "Project1_LandscapeImage.png",
-                "Project1_SquareImage.png"
+                "/static/images/Project1_LandscapeImage.png",
+                "/static/images/Project1_SquareImage.png"
             ]
         },
         {
@@ -33,8 +33,8 @@
             "live_link": "http://www.jonhayjr.com/Interactive-Form",
             "github_link": "https://github.com/jonhayjr/Interactive-Form",
             "image_urls": [
-                "Project2_LandscapeImage.png",
-                "Project2_SquareImage.png"
+                "/static/images/Project2_LandscapeImage.png",
+                "/static/images/Project2_SquareImage.png"
             ]
         },
         {
@@ -45,8 +45,8 @@
             "live_link": "https://www.jonhayjr.com/OOP-Game-Show-App",
             "github_link": "https://github.com/jonhayjr/OOP-Game-Show-App",
             "image_urls": [
-                "Project3_LandscapeImage.png",
-                "Project3_SquareImage.png"
+                "/static/images/Project3_LandscapeImage.png",
+                "static/images/Project3_SquareImage.png"
             ]
         },
         {
@@ -57,8 +57,8 @@
             "live_link": "https://www.jonhayjr.com/Public-API-Requests",
             "github_link": "https://github.com/jonhayjr/Public-API-Requests",
             "image_urls": [
-                "Project4_LandscapeImage.png",
-                "Project4_SquareImage.png"
+                "/static/images/Project4_LandscapeImage.png",
+                "static/images/Project4_SquareImage.png"
             ]
         }
     ]
