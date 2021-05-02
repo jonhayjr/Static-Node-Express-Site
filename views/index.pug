@@ -4,7 +4,7 @@ block content
 
   article.portfolio-intro
 
-    h1 Jon Hay's Portfolio
+    h1 My Portfolio
 
     p Here are a few of the JavaScript projects that I've been working on over the past few months.
 
@@ -14,5 +14,5 @@ block content
       each project in projects
         .cell
           a(href=`/project/${project.id}`)
-            img.thumbnail(src= project.image_urls[1], alt= project.project_name)
+            img.thumbnail(src= project.image_urls[0], alt= project.project_name)
             h5= project.project_name

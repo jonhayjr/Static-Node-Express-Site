@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "start": "npm start",
   "author": "Jon Hay",
   "license": "ISC",
   "dependencies": {
