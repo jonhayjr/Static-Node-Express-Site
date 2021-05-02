@@ -26,7 +26,6 @@ app.get( '/about', (req, res, next) => {
     err.message = err.message || `Oops, something went wrong!`;
     res.status(err.status = err.status || 500).render('error', {err});
     console.log(`An error has occurred: ${err.status} - ${err.message}`);
-    throw err;
 });
 
 //Routes to project/error page and throws custom error message
@@ -35,7 +34,6 @@ app.get('/project/error', (req, res, next) => {
   err.message = err.message || `Oops, something went wrong!`;
   res.status(err.status = err.status || 500).render('error', {err});
   console.log(`An error has occurred: ${err.status} - ${err.message}`);
-  throw err;
 });
 
 
@@ -51,28 +49,31 @@ app.get('/project/error', (req, res, next) => {
       const err = new Error('Not Found');
       err.status = 404;
       err.message = 'Page Not Found';
-      throw err;
+      next(err);
     }
   });
 
   //404 Error Handler to catch undefined and send to error handler
   app.use((req, res, next) => {
     const err = new Error('Not Found');
-    err.status = 404;
+    res.sendStatus(404);
     err.message = 'Page Not Found';
     next(err);
 });
 
 //Global Error Handler
 app.use((err, req, res, next) => {
-  //Throws Page Not Found error for 404 errors and generic error for all other errors.
+    res.locals.error = err;
+  
+    //Throws Page Not Found error for 404 errors and generic error for all other errors.
     if (err.status === 404) {
-      res.status(404).render('page-not-found', {err});
-      console.log(`404 Error: ${err.status} - ${err.message}`);
+      console.log(`404 Error555: ${err.status} - ${err.message}`);
+      res.status(err.status).render('page-not-found', {err});
     } else {
-      err.message = err.message || `Oops, something went wrong!`;
-      res.status(err.status = err.status || 500).render('error', {err});
+      err.message = err.message || 'Oops, something went wrong!';
+      err.status = err.status || 500;
       console.log(`An error has occurred: ${err.status} - ${err.message}`);
+      res.status(err.status).render('error', {err});
     }
 });
 
