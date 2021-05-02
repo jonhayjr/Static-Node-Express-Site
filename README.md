@@ -17,3 +17,4 @@ Added error class with red font color and uppercase lettering for h1 and h2 elem
 Added hover effects to Github, LinkedIn and Twitter button links.
 
 **Click below for a preview**\
+https://jon-hay-portfolio-site.herokuapp.com/
