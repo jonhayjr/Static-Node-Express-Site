@@ -46,33 +46,36 @@ app.get('/project/error', (req, res, next) => {
     if (project) {
       res.render('project', {project});
     } else {
-      const err = new Error('Not Found');
+      const err = new Error();
       err.status = 404;
       err.message = 'Page Not Found';
+      //Passes error to global error handler
       next(err);
     }
   });
 
-  //404 Error Handler to catch undefined and send to error handler
-  app.use((req, res, next) => {
-    const err = new Error('Not Found');
-    err.status = 404;
-    err.message = 'Page Not Found';
-    res.status(err.status).render('page-not-found', {err});
+
+//404 Error Handler to catch undefined and send to error handler
+app.use((req, res, next) => {
+  const err = new Error();
+  err.status = 404;
+  err.message = 'Page Not Found';
+  res.status(err.status).render('page-not-found', {err});
 });
 
 //Global Error Handler
 app.use((err, req, res, next) => {
-    err.status = err.status || 500;
-    err.message = err.message || 'Oops, something went wrong!'; 
     //Log error to console
-    console.log(`${err.status} - ${err.message}`);
+    if (err) {
+      console.log(`${err.status} - ${err.message}`);
+    }
   
     //Throws Page Not Found error for 404 errors and generic error for all other errors.
     if (err.status === 404) {
       res.status(err.status).render('page-not-found', {err});
     } else {
-      res.status(err.status).render('error', {err});
+      err.message || 'Oops, something went wrong!'; 
+      res.status(err.status || 500).render('error', {err});
     }
 });
 
