@@ -1,8 +1,9 @@
 const express = require('express');
-const data = require('./data.json')
+const data = require('./data.json');
 const {projects} = data;
 const app = express();
 const port = process.env.PORT || 3000;
+
 
 //View Engine Setup
 app.set('view engine', 'pug');
@@ -43,33 +44,32 @@ app.get('/project/error', (req, res, next) => {
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === projectId );
     //Checks if project data exists for specific id.  If not, a 404 error is thrown.
+ 
     if (project) {
       res.render('project', {project});
     } else {
       const err = new Error();
       err.status = 404;
-      err.message = 'Page Not Found';
+      err.message = 'Page not found';
       //Passes error to global error handler
       next(err);
     }
   });
 
 
-//404 Error Handler to catch undefined and send to error handler
+//404 Error Handler to catch undefined routes
 app.use((req, res, next) => {
   const err = new Error();
   err.status = 404;
   err.message = 'Page Not Found';
-  res.status(err.status).render('page-not-found', {err});
+  res.render('page-not-found', {err});
 });
 
 //Global Error Handler
 app.use((err, req, res, next) => {
-    //Log error to console
-    if (err) {
-      console.log(`${err.status} - ${err.message}`);
-    }
   
+  //Log error to console
+    console.log(`${err.status} - ${err.message}`);
     //Throws Page Not Found error for 404 errors and generic error for all other errors.
     if (err.status === 404) {
       res.status(err.status).render('page-not-found', {err});
