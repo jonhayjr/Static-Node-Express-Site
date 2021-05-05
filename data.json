@@ -43,7 +43,8 @@
             "image_urls": [
                 "/static/images/Project2_SquareImage.png",
                 "/static/images/Project2_LandscapeImage1.png",
-                "/static/images/Project2_LandscapeImage2.png"
+                "/static/images/Project2_LandscapeImage2.png",
+                "/static/images/Project2_LandscapeImage3.png"
             ]
         },
         {
