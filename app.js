@@ -60,8 +60,8 @@ app.use((req, res, next) => {
   const err = new Error();
   err.status = 404;
   err.message = 'Page Not Found';
-  res.render('page-not-found', {err});
   console.log(`404 error has occurred. (${err.status} - ${err.message})`);
+  res.render('page-not-found', {err});
 });
 
 //Global Error Handler
@@ -69,12 +69,12 @@ app.use((err, req, res, next) => {
 
   //Throws Page Not Found error for 404 errors and generic error for all other errors.
   if (err.status === 404) {
-    res.status(err.status).render('page-not-found', {err});
     console.log(`404 error has occurred. (${err.status} - ${err.message})`);
+    res.status(err.status).render('page-not-found', {err});
   } else {
-    err.message || 'Oops, something went wrong!'; 
-    res.status(err.status || 500).render('error', {err});
+    err.message || 'Oops, something went wrong!';
     console.log(`An error has occurred. (${err.status} - ${err.message})`);
+    res.status(err.status || 500).render('error', {err});
     }
 });
 
