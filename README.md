@@ -8,7 +8,7 @@ In this project, I created a portfolio website using Node.js, Express and Pug.  
 Changed font to Nunito.
 
 1. Project Image Over Effect 
-Added box shadow and scale effect to project images on hover.
+Added box shadow effect to project images on hover.
 
 1. Error Pages Styling
 Added error class with red font color and uppercase lettering for h1 and h2 elements.
