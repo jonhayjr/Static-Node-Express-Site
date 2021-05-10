@@ -75,8 +75,9 @@ app.use((err, req, res, next) => {
     res.status(err.status).render('page-not-found', {err});
   } else {
     err.message || 'Oops, something went wrong!';
+    err.status = err.status || 500;
     console.log(`An error has occurred. (${err.status} - ${err.message})`);
-    res.status(err.status || 500).render('error', {err});
+    res.status(err.status).render('error', {err});
     }
 });
 
