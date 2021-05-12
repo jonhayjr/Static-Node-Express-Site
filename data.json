@@ -6,6 +6,8 @@
             "project_name": "Random Quote Generator",
             "description": "This project is a random quote generator that selects a random quote object from an array and then displays the contents of the quote object on the page.",
             "technologies": [
+                "HTML",
+                "CSS",
                 "JavaScript"
             ],
             "live_link": "http://www.jonhayjr.com/Random-Quote-Generator",
@@ -21,6 +23,8 @@
             "project_name": "Pagination and Filtering Page",
             "description": "This project uses JavaScript to paginate student data on separate pages based on the total number of students.",
             "technologies": [
+                "HTML",
+                "CSS",
                 "JavaScript"
             ],
             "live_link": "http://www.jonhayjr.com/Pagination-and-Filtering",
@@ -36,6 +40,8 @@
             "project_name": "Interactive Form",
             "description": "This project adds JavaScript to a form to make it more user-friendly. There is customized and conditional behavior and interactivity along with input validation with meaningful error messages.",
             "technologies": [
+                "HTML",
+                "CSS",
                 "JavaScript"
             ],
             "live_link": "http://www.jonhayjr.com/Interactive-Form",
@@ -52,6 +58,7 @@
             "project_name": "Game Show App",
             "description": "This is a word guessing game that generates a random phrase and gives a player 5 tries to guess the word by clicking a letter on the onscreen keyboard. I used Object-Oriented Programming to create a game and phrase class with unique properties and methods.",
             "technologies": [
+                "HTML",
                 "CSS",
                 "JavaScript"
             ],
@@ -69,6 +76,7 @@
             "project_name": "Employee Directory App",
             "description": "This projects uses a Random User Generator API to pull data 12 random employees and creates an employee directory based off of this data. I added Previous and Next button navigation in the modal window so that users can switch between employees. I also added a search bar with search logic so that users can search for employees by name.",
             "technologies": [
+                "HTML",
                 "CSS",
                 "JavaScript", 
                 "API"
