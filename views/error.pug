@@ -3,6 +3,5 @@ extends layout.pug
 block content
     h1.error= `${err.message} - Status: ${err.status}`
     img.thumbnail(src= '/static/images/error.png', alt= 'Error Image')
-    p.error= err.stack
     nav.nav
         a(href='/') Go Home
