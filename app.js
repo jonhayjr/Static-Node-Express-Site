@@ -25,24 +25,6 @@ app.get( '/about', (req, res, next) => {
   res.render('about');
 });
 
-//Routes to Error page and throws custom error message
-app.get('/error', (req, res, next) => {
-const err = new Error();
-err.message = err.message || `Oops, something went wrong!`;
-err.status = err.status || 500;
-console.log(`An error has occurred. (${err.status} - ${err.message})`);
-res.status(err.status).render('error', {err});
-});
-
-//Routes to project/error page and throws custom error message
-app.get('/project/error', (req, res, next) => {
-const err = new Error();
-err.message = err.message || `Oops, something went wrong!`;
-err.status = err.status || 500;
-console.log(`An error has occurred.  (${err.status} - ${err.message})`);
-res.status(err.status).render('error', {err});
-});
-
 //Routes to individual project pages
 app.get('/project/:id', (req, res, next) => {
   const projectId = req.params.id;
